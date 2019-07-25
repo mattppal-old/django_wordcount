@@ -1,0 +1,10 @@
+<h1> Count: </h1>
+There are {{ count }} words in your text.
+
+<a href="{% url 'home' %}"> Start again </a>
+<h1>Your Text:</h1>
+{{ fulltext }}
+<h1>Words:</h1>
+{% for word, countsum in count_dict %}
+{{word}} - {{countsum}} <br />
+{% endfor %}
