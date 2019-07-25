@@ -18,6 +18,3 @@ def count(request):
 
 def about(request):
   return render(request, 'about.html')
-
-def test(request):
-  return render(request, 'test.html')
